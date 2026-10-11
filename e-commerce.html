@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Group I E-commerce Website</title>
+<link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<header>
+<div class="header section">
+<header>
+  <div class="nav">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+</header>
+</div>
+<body>
+  <div class="items-div">
+<img class="img" src="e-logo.jpg">
+<h2>Welcome to Group I E-commerce Website</h2>
+<div class="product">
+<img src="basket-ball2.jpg" alt="Basket Ball">
+<p class="p">Basket Ball</p>
+<label class="label">
+  Select quantity
+</label>
+<select class="select">
+  <option class="option" selected value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+</select>
+<p><button id="cartButton">Add to cart</button></p>
+</div>
+</div>
+<!-- Add more product listings -->
+</body>
+<script>
+  var cartButton = document.getElementById("cartButton");
+
+// Add an event listener for the 'click' event
+cartButton.addEventListener("click", function() {
+  // Change the button text
+  cartButton.innerHTML = "Added to Cart&#x2713";
+});
+</script>
+</html>

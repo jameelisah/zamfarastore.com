@@ -1,0 +1,24 @@
+body {
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+}
+
+.title {
+  font-family: cursive;
+}
+hr {
+
+}
+
+.coding:hover {
+  cursor: pointer;
+  box-shadow: rgba(16, 32, 39, 0.8) 0px 2px 4px 0px,
+  rgba(16, 32, 39, 0.82) 0px 2px 16px 0px;
+}
+img {
+  width: 680px;
+  height: 620px;
+  border-radius: 10px;
+}

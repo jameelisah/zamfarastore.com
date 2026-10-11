@@ -1,0 +1,184 @@
+<style>
+* Header styles */
+.header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 20px;
+}
+
+.navigation ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  margin-left: 20px;
+}
+
+.navigation a {
+  color: darkblue;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.navigation a:hover {
+  color: pink;
+}
+
+.user-actions {
+  display: flex;
+  color: green;
+}
+
+.user-actions a {
+  margin-left: 30px;
+  color: darkblue;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.user-actions a:hover {
+  color: #ddd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== UNIVERSAL RESPONSIVE FIX ===== */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+    min-width: 320px;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Images, videos and other media */
+img,
+video,
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Prevent text from forcing horizontal scrolling */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+div {
+    overflow-wrap: break-word;
+}
+
+/* Make common containers fit the screen */
+.container,
+.wrapper,
+.content,
+section,
+header,
+main,
+footer {
+    max-width: 100%;
+}
+
+/* Flexible rows */
+.row,
+.flex {
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+/* Tables */
+table {
+    max-width: 100%;
+}
+
+/* Form elements */
+input,
+textarea,
+select,
+button {
+    max-width: 100%;
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+
+    .container,
+    .wrapper,
+    .content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* ===== SMALL PHONES ===== */
+
+@media (max-width: 480px) {
+
+    body {
+        min-width: 320px;
+    }
+
+    input,
+    textarea,
+    select,
+    button {
+        max-width: 100%;
+    }
+}
+
+
+</style>

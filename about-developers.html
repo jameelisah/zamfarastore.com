@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Zamfara Online Store</title>
+
+<style>
+body {
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+background: linear-gradient(#EFEFFF, #CCCBFF);
+}
+
+.title {
+  font-family: cursive;
+  display: inline-block;
+
+}
+hr {
+
+}
+.product {
+    display: flex;
+    align-items: center;
+    background-color: ;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    display: inline-block;
+    padding-right: 52px;
+    padding-left: 52px;
+    margin: 5px;
+    justify-content: center;
+    height: 335px;
+    width: 310px;
+
+}
+.product:hover {
+  box-shadow: rgba(16, 32, 39, 0.8) 0px 2px 4px 0px,
+  rgba(16, 32, 39, 0.82) 0px 2px 16px 0px;
+}
+h3 {
+  text-align: center;
+  font-family: cursive;
+}
+
+.product-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+.product-image:hover {
+  cursor: pointer;
+  box-shadow: rgba(16, 32, 39, 0.8) 0px 2px 4px 0px,
+  rgba(16, 32, 39, 0.82) 0px 2px 16px 0px;
+}
+p {
+  font-family: cursive;
+  font-size: 15px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+button {
+  padding-top: 09px;
+  padding-bottom: 09px;
+  padding-right: 100px;
+  padding-left: 100px;
+  border-radius: 16px;
+  font-family: sans-serif;
+  background-color: yellow;
+  font-weight: bold;
+  font-size: 14px;
+  color: black;
+  cursor: pointer;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  font-weight: 380px;
+  justify-content: center;
+}
+button:hover {
+  opacity: 0.5;
+}
+button:active {
+background: #111;
+color: white;
+opacity: 0.9;
+}
+
+menu-select {
+  font-family: cursive;
+  font-weight: 400;
+  text-align: left;
+}
+
+select {
+  display: inline-flex;
+  border-radius: 10px;
+  border-width: 3px;
+  border-color: black;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 8px;
+  padding-left: 8px;
+  font-family: cursive;
+  font-size: 16px;
+  background-color: lightgray;
+  margin-left: 5px;
+}
+select:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+select:active {
+  cursor: pointer;
+  border-color: gray;
+  color: white;
+  background-color: black;
+}
+
+footer {
+  font-family: cursive;
+  text-align: center;
+  display: inline-block;
+}
+.zamfara {
+  display: block;
+  font-family: cursive;
+  margin-left: -3%;
+  margin-top: -100px;
+}
+</style>
+  </head>
+
+  <body>
+    <center>
+       <h1 class="title" >About Developers</h1>
+       <hr>
+    <!-- first member of the team -->
+    <section>
+      <div class="product">
+      <img class="product-image" src="images/jameel-logo.jpg" alt="Product 1">
+      <h3>Jameel Isah</h3>
+      <p class="Product-price">CEO & Founder</p>
+      <p class="Product-price">Full Stack web developer</p>
+      <p><button id="cartButton" class="add-to-cart">Follow</button></p>
+      </div>
+    </section>
+
+
+    <!-- second member of the team -->
+    <div class="product">
+    <img class="product-image" src="images/teapot.png" alt="Product 1">
+    <h3>Jameel Isah</h3>
+    <p class="Product-price">CEO & Founder</p>
+    <p class="Product-price">UI/UX Designer</p>
+    <p><button id="cartButton" class="add-to-cart">Follow</button></p>
+    </div>
+
+    <!-- third member of the team -->
+    <div class="product">
+    <img class="product-image" src="images/teapot.png" alt="Product 1">
+    <h3>Jameel Isah</h3>
+    <p class="Product-price">CEO & Founder</p>
+    <p class="Product-price">Content Creator</p>
+    <p><button id="cartButton" class="add-to-cart">Follow</button></p>
+    </div>
+
+    <!-- fourth member of the team -->
+    <div class="product">
+    <img class="product-image" src="images/teapot.png" alt="Product 1">
+    <h3>Jameel Isah</h3>
+    <p class="Product-price">CEO & Founder</p>
+    <p class="Product-price">Product Manager</p>
+    <p><button id="cartButton" class="add-to-cart">Follow</button></p>
+    </div>
+      </center>
+  </body>
+  <script type="text/javascript">
+
+const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+addToCartButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Change the button text
+button.innerHTML = 'Followed &nbsp &#x2713';
+    });
+});
+
+  </script>
+</html>

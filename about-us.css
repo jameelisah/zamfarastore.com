@@ -1,0 +1,187 @@
+/* RESET */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* WATERMARK */
+.watermark {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: url("images/zamfara-e-logo.png");
+background-repeat: no-repeat;
+background-position: center;
+background-size: 650px;
+opacity: 0.12;   /* very light like MS Word */
+pointer-events: none;
+z-index: -1;
+}
+
+/* CONTENT */
+.content {
+padding: 40px;
+font-family: Arial, sans-serif;
+position: relative;
+z-index: 1;
+}
+body {
+  background-color: #f4f4f4;0
+  font-family: cursive, sans-serif;
+  line-height: 2.0;
+}
+h1 {
+  text-align: left;
+  color: brown;
+  padding-left: 35px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-family: cursive, sans-serif;
+}
+p {
+  color: #555;
+  font-family: cursive, sans-serif;
+  padding-left: 20px;
+  font-size: 20px;
+}
+.mission {
+  font-weight: bold;
+  padding-left: 35px;
+  font-size: 25px;
+  color: #2e7485;
+}
+ul {
+  padding-left: 35px;
+  font-family: cursive, sans-serif;
+  font-size: 20px;
+  line-height: 2.0;
+  color: #555;
+}
+.thank {
+  text-align: center;
+}
+footer {
+  font-family: cursive, sans-serif;
+  font-size: 18px;
+  #333 background-color: ;
+  color: brown;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0;
+
+}
+
+
+
+
+
+/* ===== UNIVERSAL RESPONSIVE FIX ===== */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+    min-width: 320px;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Images, videos and other media */
+img,
+video,
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Prevent text from forcing horizontal scrolling */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+div {
+    overflow-wrap: break-word;
+}
+
+/* Make common containers fit the screen */
+.container,
+.wrapper,
+.content,
+section,
+header,
+main,
+footer {
+    max-width: 100%;
+}
+
+/* Flexible rows */
+.row,
+.flex {
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+/* Tables */
+table {
+    max-width: 100%;
+}
+
+/* Form elements */
+input,
+textarea,
+select,
+button {
+    max-width: 100%;
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+
+    .container,
+    .wrapper,
+    .content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* ===== SMALL PHONES ===== */
+
+@media (max-width: 480px) {
+
+    body {
+        min-width: 320px;
+    }
+
+    input,
+    textarea,
+    select,
+    button {
+        max-width: 100%;
+    }
+}

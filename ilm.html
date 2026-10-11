@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Podcast and PDF</title>
+  </head>
+  <body>
+    <h1>Podcast and PDF Download</h1>
+
+   <!-- Podcast Section -->
+   <h2>Listen to Our Podcast</h2>
+   <audio controls>
+         <source src="001.mp3" type="audio/mpeg">
+       Your browser does not support the audio element.
+   </audio>
+
+   <!-- PDF Download Section -->
+   <h2>Download Our PDF</h2>
+   <a href="URL_TO_YOUR_PDF" download>Download PDF</a>
+   <!-- PDF Download Section -->
+   <video width="420" height="340" controls>
+     <source src="002.mp4" type="video/mp4">
+        <source src="002.ogg" type="video/ogg">
+   </video>
+  </body>
+  <script type="text/javascript">
+    // Optional: Prevent page reload when clicking the PDF link
+       document.querySelector('a').addEventListener('click', function(event) {
+           event.preventDefault();
+           const link = this.getAttribute('href');
+           window.open(link, '_blank');
+       });
+  </script>
+</html>

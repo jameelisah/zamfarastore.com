@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pay Now | Zamfara Online Shopping Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #009688;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .container {
+      max-width: 500px;
+      background: #fff;
+      padding: 30px;
+      margin: 40px auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    input {
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 12px;
+      background-color: #009688;
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #00796b;
+    }
+
+    .secure-note {
+      margin-top: 20px;
+      font-size: 14px;
+      text-align: center;
+      color: #888;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Zamfara Online Shopping Store</h1>
+  </header>
+
+  <div class="container">
+    <h1>Pay Now</h1>
+
+    <form onsubmit="submitPayment(event)">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="cardnumber">Card Number</label>
+      <input type="text" id="cardnumber" name="cardnumber" maxlength="16" placeholder="0000 0000 0000 0000" required />
+
+      <label for="expiry">Expiry Date</label>
+      <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required />
+
+      <label for="cvv">CVV</label>
+      <input type="password" id="cvv" name="cvv" maxlength="3" required />
+
+      <button type="submit">Pay ₦5,000</button>
+    </form>
+
+    <p class="secure-note">🔒 Your payment is secure and encrypted.</p>
+  </div>
+
+  <footer>
+    &copy; 2025 Zamfara Online Shopping Store. All rights reserved.
+  </footer>
+
+  <script>
+    function submitPayment(event) {
+      event.preventDefault();
+      alert("✅ Payment successful! (Simulated)");
+      // You can redirect or clear the form here
+    }
+  </script>
+
+</body>
+</html>
