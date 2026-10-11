@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  <style media="screen">
+    #content-sections {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#podcast, #pdf {
+    width: 45%;
+    margin: 15px;
+    text-align: center;
+}
+
+audio {
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+  </style>
+  </head>
+  <body>
+    <div id="content-sections">
+<div id="podcast">
+<h3>Podcast</h3>
+<!-- Your podcast player code here -->
+<audio src="path/to/your/podcast.mp3" controls></audio>
+</div>
+<div id="pdf">
+<h3>PDF</h3>
+<!-- Your PDF download link here -->
+<a href="path/to/your/pdf.pdf" target="_blank">Download PDF</a>
+</div>
+</div>
+
+  </body>
+  <script type="text/javascript">
+    const contentSections = document.getElementById('content-sections');
+const podcastSection = document.getElementById('podcast');
+const pdfSection = document.getElementById('pdf');
+
+podcastSection.addEventListener('click', () => {
+    podcastSection.classList.remove('hidden');
+    pdfSection.classList.add('hidden');
+});
+
+pdfSection.addEventListener('click', () => {
+    pdfSection.classList.remove('hidden');
+    podcastSection.classList.add('hidden');
+});
+
+
+
+  </script>
+</html>
